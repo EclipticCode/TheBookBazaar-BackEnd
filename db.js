@@ -1,8 +1,6 @@
 const mongoose = require('mongoose')
 
-// const mongoDbUrl = process.env.mongoDbUrl;
-
-const mongoDbUrl = `mongodb+srv://jananib6:Janani2000@cluster0.4h2ombp.mongodb.net/TheBookBazaar`
+const mongoDbUrl = process.env.mongoDbUrl;
 
 const connectDb = async () => {
 
