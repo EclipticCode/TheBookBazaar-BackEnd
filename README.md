@@ -6,6 +6,6 @@ The Book Bazaar is an online store dedicated to providing users with a wide sele
 This backend repository contains the server-side code for The Book Bazaar application. It is built using Node.js and Express framework.
 
 ## Endpoints
-- POST /registration - Register a New User
-- GET /login - Authenticate User and generate JWT token
+- POST  /registration - Register a New User
+- GET  /login - Authenticate User and generate JWT token
 
