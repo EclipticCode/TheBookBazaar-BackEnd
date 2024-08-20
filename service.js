@@ -33,10 +33,14 @@ const handleLogin = async (apiReq , apiRes) => {
    try {
     const username = apiReq.params.username
     const password = apiReq.params.password
+    
+    console.log(username , "username")
+    console.log(password , "password")
 
     const dbResponse = await RegistrationModel.findOne({
         username : username 
     })  
+    console.log(dbResponse.username , "dbResponse")
 
     if(dbResponse?.username){
         const passwordMatch = await bcrypt.compare(password , dbResponse.password)
